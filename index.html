@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <!-- css-style -->
+  <link rel="stylesheet" href="./style/main.css">
+
+  <!-- goole_fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <!-- main-card -->
+
+    <div class="profile">
+      <!-- top -->
+      <div class="top-profile">
+        <img src="./images/image-jeremy.png" alt="image-jeremy">
+        <!-- txt -->
+        <div class="top-profile-txt">
+          <p>Report for</p>
+          <p class="name">Jeremy Robson</p>
+        </div>
+      </div>
+      <!-- botttom -->
+      <div class="bottom-stats">
+        <div class="menu-link" id="mlink1" onclick="chd()">Daily</div>
+        <div class="menu-link active-card" id="mlink2" onclick="chw()">Weekly</div>
+        <div class="menu-link" id="mlink3" onclick="chm()">Monthly</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-stats">
+        <!-- right -->
+        <div class="right">
+          <div class="work">Work</div>
+          <div class="hr" id="workhr">32hrs</div>
+        </div>
+        <!-- left -->
+        <div class="left">
+          <div class="dots">...</div>
+          <div class="last" id="worklast">Last Week-36hrs</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" id="play">
+      <div class="card-stats">
+        <!-- right -->
+        <div class="right">
+          <div class="work">Play</div>
+          <div class="hr" id="playhr">10hrs</div>
+        </div>
+        <!-- left -->
+        <div class="left">
+          <div class="dots">...</div>
+          <div class="last" id="playlast">Last Week-8hrs</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" id="study">
+      <div class="card-stats">
+        <!-- right -->
+        <div class="right">
+          <div class="work">Study</div>
+          <div class="hr" id="studyhr">4hrs</div>
+        </div>
+        <!-- left -->
+        <div class="left">
+          <div class="dots">...</div>
+          <div class="last" id="studylast">Last Week-7hrs</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" id="exercise">
+      <div class="card-stats">
+        <!-- right -->
+        <div class="right">
+          <div class="work">Exercise</div>
+          <div class="hr" id="exercisehr">4hrs</div>
+        </div>
+        <!-- left -->
+        <div class="left">
+          <div class="dots">...</div>
+          <div class="last" id="exerciselast">Last Week-5hrs</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" id="social">
+      <div class="card-stats">
+        <!-- right -->
+        <div class="right">
+          <div class="work">Social</div>
+          <div class="hr" id="socialhr">5hrs</div>
+        </div>
+        <!-- left -->
+        <div class="left">
+          <div class="dots">...</div>
+          <div class="last" id="sociallast">Last Week-10hrs</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" id="self-care">
+      <div class="card-stats">
+        <!-- right -->
+        <div class="right">
+          <div class="work">Self-Care</div>
+          <div class="hr" id="self-carehr">2hrs</div>
+        </div>
+        <!-- left -->
+        <div class="left">
+          <div class="dots">...</div>
+          <div class="last" id="self-carelast">Last Week-2hrs</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>

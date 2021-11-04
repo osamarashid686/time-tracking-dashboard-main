@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: #0f1424;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+  }
+  .container {
+    width: 88%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 23% 23% 23% 23%;
+        grid-template-columns: 23% 23% 23% 23%;
+    gap: 3rem;
+  }
+  .container .profile {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / span 2;
+    background-color: #1c1f4a;
+    border-radius: 1.6rem;
+  }
+  .container .profile .top-profile {
+    background-color: #5847eb;
+    border-radius: 1.6rem;
+    padding: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    gap: 1.8rem;
+  }
+  .container .profile .top-profile img {
+    width: 36%;
+    border: 3px solid white;
+    border-radius: 50%;
+  }
+  .container .profile .top-profile .top-profile-txt p {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 20px;
+  }
+  .container .profile .top-profile .top-profile-txt .name {
+    font-size: 4rem;
+    margin-top: 3px;
+    font-weight: 300;
+    margin-bottom: 80px;
+  }
+  .container .profile .bottom-stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #9b9b9b;
+    padding: 2.5rem 2.5rem;
+  }
+  .container .profile .bottom-stats .menu-link {
+    margin-bottom: 15px;
+  }
+  .container .profile .bottom-stats .menu-link:hover {
+    color: white;
+    cursor: pointer;
+  }
+  .container .profile .bottom-stats .menu-link .active-card:active {
+    color: white;
+  }
+  .container .card {
+    background-color: #ff8c66;
+    border-radius: 1.6rem;
+    background-image: url("../images/icon-work.svg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    padding: 5px 0px;
+    height: 100px;
+  }
+  .container .card .card-stats {
+    background-color: #1c1f4a;
+    border-radius: 1.6rem;
+    position: relative;
+    top: 30px;
+    padding: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .container .card .card-stats:hover {
+    background-color: #292e6b;
+    cursor: pointer;
+  }
+  .container .card .card-stats .right {
+    font-size: 1.7rem;
+    color: white;
+  }
+  .container .card .card-stats .right .work {
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  .container .card .card-stats .right .hr {
+    font-size: 5rem;
+    font-weight: 100;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .container .card .card-stats .left {
+    font-size: 2rem;
+    color: #a0a0a0;
+  }
+  .container .card .card-stats .left .dots {
+    text-align: right;
+    font-size: 3.5rem;
+    position: relative;
+    bottom: 20px;
+  }
+  .container .card .card-stats .left .dots:hover {
+    color: white;
+    cursor: pointer;
+  }
+  .container .card .card-stats .left .last {
+    position: relative;
+    font-size: 1.4rem;
+    display: inline-block;
+    position: absolute;
+    top: 150px;
+    left: 30px;
+  }
+  .container #play {
+    background-color: #56c2e6;
+    background-image: url("../images/icon-play.svg");
+  }
+  .container #study {
+    background-color: #ff5c7c;
+    background-image: url("../images/icon-study.svg");
+  }
+  .container #exercise {
+    background-color: #4acf81;
+    background-image: url("../images/icon-exercise.svg");
+  }
+  .container #social {
+    background-color: #7536d3;
+    background-image: url("../images/icon-social.svg");
+  }
+  .container #self-care {
+    background-color: #f1c65b;
+    background-image: url("../images/icon-self-care.svg");
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 88%;
+    margin: 2rem auto;
+  }
+  .container .profile {
+    background-color: #1c1f4a;
+    border-radius: 1.6rem;
+  }
+  .container .profile .top-profile {
+    background-color: #5847eb;
+    border-radius: 1.6rem;
+    padding: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    gap: 1.8rem;
+  }
+  .container .profile .top-profile img {
+    width: 26%;
+    border: 3px solid white;
+    border-radius: 50%;
+  }
+  .container .profile .top-profile .top-profile-txt p {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  .container .profile .top-profile .top-profile-txt .name {
+    font-size: 2rem;
+    margin-top: 3px;
+    font-weight: 400;
+  }
+  .container .profile .bottom-stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #9b9b9b;
+    padding: 2.5rem 2rem;
+  }
+  .container .profile .bottom-stats .menu-link:hover {
+    color: white;
+    cursor: pointer;
+  }
+  .container .profile .bottom-stats .menu-link .active-card:active {
+    color: white;
+  }
+  .container .card {
+    background-color: #ff8c66;
+    border-radius: 1.6rem;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background-image: url("../images/icon-work.svg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    padding: 10px 0px;
+  }
+  .container .card .card-stats {
+    background-color: #1c1f4a;
+    border-radius: 1.6rem;
+    position: relative;
+    top: 30px;
+    padding: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .container .card .card-stats:hover {
+    background-color: #292e6b;
+    cursor: pointer;
+  }
+  .container .card .card-stats .right {
+    font-size: 1.7rem;
+    color: white;
+  }
+  .container .card .card-stats .right .work {
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  .container .card .card-stats .right .hr {
+    font-size: 3.2rem;
+    font-weight: 100;
+  }
+  .container .card .card-stats .left {
+    font-size: 2rem;
+    color: #a0a0a0;
+  }
+  .container .card .card-stats .left .dots {
+    text-align: right;
+    font-size: 3.5rem;
+    position: relative;
+    bottom: 20px;
+  }
+  .container .card .card-stats .left .dots:hover {
+    color: white;
+    cursor: pointer;
+  }
+  .container .card .card-stats .left .last {
+    font-size: 1.4rem;
+  }
+  .container #play {
+    background-color: #56c2e6;
+    background-image: url("../images/icon-play.svg");
+  }
+  .container #study {
+    background-color: #ff5c7c;
+    background-image: url("../images/icon-study.svg");
+  }
+  .container #exercise {
+    background-color: #4acf81;
+    background-image: url("../images/icon-exercise.svg");
+  }
+  .container #social {
+    background-color: #7536d3;
+    background-image: url("../images/icon-social.svg");
+  }
+  .container #self-care {
+    background-color: #f1c65b;
+    background-image: url("../images/icon-self-care.svg");
+  }
+}
+/*# sourceMappingURL=main.css.map */

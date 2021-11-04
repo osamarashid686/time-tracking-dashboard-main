@@ -1,0 +1,165 @@
+@media screen and (min-width: 1000px) {
+    body{
+        display: grid;
+        place-items: center;
+        height: 100vh;
+    }
+    .container{
+        width: 88%;  
+        display: grid;
+        grid-template-columns: 23% 23% 23% 23%;
+        gap: 3rem;
+
+        
+    
+        .profile{
+            grid-row: 1 / span 2;
+            background-color: $vark-blue;
+            border-radius: 1.6rem;
+    
+            .top-profile{
+                background-color: $Blue;
+                border-radius: 1.6rem;
+                padding: 3rem;
+    
+                display: flex;
+                flex-direction: column;
+                
+                justify-content: start;
+                gap: 1.8rem;
+                
+                img{
+                    width: 36%;
+                    border: 3px solid white;
+                    border-radius: 50%;
+                }
+    
+                .top-profile-txt{
+                    
+                    p{
+                        color: white;
+                        font-size:1.5rem;
+                        font-weight: 300;
+                        margin-top: 20px;
+                    }
+                    .name{
+                        font-size: 4rem;
+                        margin-top: 3px;
+                        font-weight: 300;
+                        margin-bottom: 80px;
+                    }
+                }
+                
+            }
+            .bottom-stats{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                font-size: 1.6rem;
+                font-weight: 500;
+                color: rgb(155, 155, 155);
+                padding: 2.5rem 2.5rem;
+    
+                .menu-link{
+                    margin-bottom:15px;
+                    &:hover{
+                        color: white;
+                        cursor: pointer;
+                    }
+    
+                    .active-card{
+                        &:active{
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .card{
+            background-color: $Ligh-red-work;
+            border-radius: 1.6rem;
+            background-image: url('../images/icon-work.svg');
+            background-repeat: no-repeat;
+            background-position-x: right;
+            padding: 5px 0px;
+            height: 100px;
+            
+    
+            .card-stats{
+                background-color: $vark-blue;
+                border-radius: 1.6rem;
+                position: relative;
+                top: 30px;
+                padding: 3rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+    
+                &:hover{
+                    background-color: hsl(235, 45%, 29%);
+                    cursor: pointer;
+                }
+                
+                .right{
+                    font-size: 1.7rem;
+                    color: white;
+                    .work{
+                        font-weight: 400;
+                        margin-bottom: 10px;
+                    }
+                    .hr{
+                        font-size: 5rem;
+                        font-weight: 100;
+                        margin-top: 30px;
+                        margin-bottom: 30px;
+                    }
+                }
+                .left{
+                    font-size: 2rem;
+                    color: rgb(160, 160, 160);
+                    .dots{
+                        text-align: right;
+                        font-size: 3.5rem;
+                        position: relative;
+                        bottom: 20px;
+                        &:hover{
+                            color: white;
+                            cursor: pointer;
+                        }
+                    }
+                    .last{
+                        position: relative;
+                        font-size: 1.4rem;
+                        display: inline-block;
+                        position: absolute;
+                        top: 150px;
+                        left: 30px;
+                    }
+                }
+            }
+        }
+        #play{
+            background-color: $Sof-blue-play;
+            background-image: url('../images/icon-play.svg');
+        }
+        #study{
+            background-color: $Ligh-red-study;
+            background-image: url('../images/icon-study.svg');
+        }
+        #exercise{
+            background-color: $Lime-green-exercise;
+            background-image: url('../images/icon-exercise.svg');
+        }
+        #social{
+            background-color: $Violet-social;
+            background-image: url('../images/icon-social.svg');
+        }
+        #self-care{
+            background-color: $Soft-orange-self-care;
+            background-image: url('../images/icon-self-care.svg');
+        }
+    
+    }
+
+}
